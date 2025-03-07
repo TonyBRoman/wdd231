@@ -15,7 +15,7 @@
 <body>
     <header>
         <img src="images/id.JPG" alt="Tony Barron">
-        <h1>Jorge Antonio Barron Roman</h1>
+        <span>Jorge Antonio Barron Roman</span>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,6 +27,7 @@
     </header>
     <main>
         <h1>Home</h1>
+
         <section class="container">
             <div class="card">
                 <h2>Course Work</h2>
@@ -36,17 +37,38 @@
                     <li></li>
                 </ul>
             </div>
+        </section>
+
+        <section>
             <div class="card">
                 <h2>Monterrey Mexico</h2>
                 <img src="images/monterrey.webp" alt="Monterrey">
                 <p>Cerro de la Silla</p>
             </div>
         </section>
+
         <section class="certificate">
             <h2>Web and Computer Programming Certificate</h2>
-
+            <div class="filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="courses">
+                <button class="cse">CSE 110</button>
+                <button class="wdd">WDD 130</button>
+                <button class="cse">CSE 111</button>
+                <button class="cse">CSE 210</button>
+                <button class="wdd">WDD 131</button>
+                <button class="wdd">WDD 231</button>
+            </div>
         </section>
     </main>
-    
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> 🤖 Jorge Antonio Barrón Román 🦾, Mexico
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
