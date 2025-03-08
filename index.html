@@ -6,24 +6,31 @@
     <title>Home Page</title>
     <meta name="description" content="Home page for the WDD 241 - Web Frontend Development I class.">
     <meta name="author" content="Jorge Antonio Barron Roman">
-    <link rel="stylesheet" href="#">
-    <script src="#" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/id.JPG" alt="Tony Barron">
-        <span>Jorge Antonio Barron Roman</span>
-        <nav>
+        <div class="header-content">
+            <img src="images/id.JPG" alt="Tony Barron">
+            <span>Jorge Antonio Barron Roman</span>
+        </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav id="nav-menu">
+            <button id="close-menu" class="close-menu" aria-label="Close menu">&times;</button>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="#">Chamber</a></li>
-                <li><a href="https://github.com/TonyBRoman">GitHub Porfile</a></li>
+                <li><a href="https://github.com/TonyBRoman">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/jorge-barron-roman/">LinkedIn</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
         <h1>Home</h1>
@@ -41,9 +48,11 @@
 
         <section>
             <div class="card">
-                <h2>Monterrey Mexico</h2>
-                <img src="images/monterrey.webp" alt="Monterrey">
-                <p>Cerro de la Silla</p>
+                <figure>
+                    <h2>Monterrey, Mexico</h2>
+                    <img src="images/monterrey.webp" alt="Monterrey" class="image-size">
+                    <figcaption>Cerro de la Silla</figcaption>
+                </figure>
             </div>
         </section>
 

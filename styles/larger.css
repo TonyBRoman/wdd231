@@ -1,0 +1,100 @@
+@media screen and (min-width: 768px) {
+     #nav-menu {
+        display: block;
+        position: relative; 
+        top: 0; 
+        background-color: #333;
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-menu ul li {
+        margin: 0 15px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .close-menu {
+        display: none; 
+    }
+
+    header { 
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    header img {
+        height: 150px;
+    }
+
+    .header-content span { 
+        font-size: 2rem;
+    }
+
+    nav { 
+        display: block;
+        width: 100%;
+        background: #b42020;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    nav ul { 
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        background: none;
+        list-style: none;
+    }
+
+    nav li { 
+        padding: 0 100px;
+        border: none;
+    }
+
+    nav a { 
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    main { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0 70px;
+        margin: auto;
+        padding: 20px 70px;
+    }
+
+    h1 { 
+        grid-column: span 2;
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    section ul { 
+        padding: 1rem 0 0 5rem;
+    }
+
+    .certificate { 
+        grid-column: span 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .certificate h2 { 
+        width: 100%;
+    }
+}
