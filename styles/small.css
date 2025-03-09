@@ -150,7 +150,7 @@ figure {
 figcaption {
     text-align: center;
     padding-bottom: 1rem;
-    color: #666;
+    color: black;
     margin-top: 5px;
     font-style: italic;
 }
@@ -166,6 +166,7 @@ figcaption {
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .filters button {
     padding: 10px 15px;
     font-size: 16px;
@@ -178,16 +179,16 @@ figcaption {
 
 #btn-all {
     background-color: #f0c674;
-    color: #654321;
+    color: black;
 }
 
 #btn-cse {
-    background-color: #ff6961;
+    background-color: #6b211d;
     color: white;
 }
 
 #btn-wdd {
-    background-color: #6ca0dc;
+    background-color: #103661;
     color: white;
 }
 
@@ -230,8 +231,8 @@ figcaption {
 }
 
 #credit-counter { 
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
     text-align: center;
     margin-top: 10px;
 }

@@ -100,43 +100,6 @@
     .certificate p { 
         padding-top: 2rem;
     }
-
-    .filters {
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-        flex-wrap: wrap;
-    }
-    
-    .filters button {
-        padding: 10px 15px;
-        font-size: 16px;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-    }
-    
-    #btn-all {
-        background-color: #f0c674;
-        color: #654321;
-    }
-    
-    #btn-cse {
-        background-color: #ff6961;
-        color: white;
-    }
-    
-    #btn-wdd {
-        background-color: #6ca0dc;
-        color: white;
-    }
-    
-    .filters button:hover {
-        background-color: #bbb;
-        transform: scale(1.05);
-    }
     
     #course-container {
         display: grid;
