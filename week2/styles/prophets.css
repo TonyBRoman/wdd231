@@ -1,6 +1,5 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -38,7 +37,7 @@ h2 {
 }
 
 p {
-    color: #555;
+    color: black;
     font-size: 1em;
     margin: 5px 0;
 }
