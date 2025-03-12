@@ -1,0 +1,28 @@
+{
+    "family_name": "Yates", 
+    "move_date": "2025-03-09", 
+    "number_of_records":4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Gordon Yates",
+            "gender": "Male",
+            "birthdate": "1956-07-30"
+        }, 
+        {
+            "name": "Carol Yates", 
+            "gender": "Female", 
+            "birthdate":"1960-11-25"
+        }, 
+        {
+            "name": "Robert Yates",
+            "gender":"Male",
+            "birthdate": "1998-09-26"
+        },
+        {
+            "name": "Melissa Yates",
+            "gender":"Female",
+            "birthdate":"1990-02-28"
+        }
+    ]
+}
