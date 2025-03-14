@@ -1,0 +1,17 @@
+@media only screen and (min-width: 38rem) { 
+   nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+    }
+
+    ul.menu-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}

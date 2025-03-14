@@ -13,24 +13,32 @@
      <meta property="og:title" content="Monterrey Bussines Network">
      <meta property="og:type" content="website">
      <meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/515/227/669/ciudad-mexico-monterrey-noche-wallpaper-preview.jpg" />
-     <meta property="og:url" content="#">
-     <link rel="stylesheet" href="styles/styles.css">
+     <meta property="og:url" content="https://tonybroman.github.io/wdd231/chamber/directory.html">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/large.css">
+     <script src="scripts/scripts.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="images/#" alt="Monterrey Business Network Logo">
-            <span>Monterrey Business Network</span>
+            <a href="directory.html">
+                <img src="images/logo.svg" alt="Monterrey Business Network Logo">
+            </a>
+            <div class="text">
+                <span class="city">Monterrey</span>
+                <span class="network">Business Network</span>
+            </div>
+            
         </div>
-        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <nav id="nav-menu">
-            <button id="close-menu" class="close-menu" aria-label="Close menu">&times;</button>
-            <ul>
-                <li><a href="directory.html">Home</a></li>
+        <nav id="animation">
+            <button id="menu-icon"></button>
+            <ul class="menu-links">
+                <li class="active"><a href="directory.html">Home</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html"></a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
         <button class="dark-mode-toggle">🌙</button>
@@ -38,7 +46,7 @@
 
     <main>
         <section class="hero">
-            <img src="images/#" alt="Monterrey">
+            <img src="images/monterrey.jpg" alt="Monterrey">
             <button class="cta-button">Keynote Tickets</button>
         </section>
 
@@ -46,61 +54,89 @@
         <section class="info">
             <div class="events">
                 <h2>Events</h2>
-                <p>Upcoming business events and networking opportunities.</p>
+                <div class="events-content">
+                    <p>Upcoming Business Conference</p>
+                    <p>Networking Night - March 15</p>
+                    <p>Entrepreneur Workshop</p>
+                </div>
             </div>
             <div class="weather">
                 <h2>Current Weather</h2>
-            <div class="weather-icon">
-                <img src="images/weather.svg" alt="Weather Icon">
-            </div>
-            <ul>
-                <li>10°C</li>
-                <li>Partly Cloudy</li>
-                <li><strong>High:</strong> 85°</li>
-                <li><strong>Low:</strong> 52°</li>
-                <li><strong>Humidity:</strong> 34%</li>
-                <li><strong>Sunrise:</strong>7:30am</li>
-                <li><strong>Sunset:</strong>9:59pm</li>
-            </ul>
+                <div class="weather-content">
+                    <div class="weather-icon">
+                        <img src="images/weather.svg" alt="Weather Icon">
+                    </div>
+                    <div class="weather-details">
+                        <p class="temperature"><strong>75°F</strong></p>
+                        <p>Partly Cloudy</p>
+                        <p><strong>High:</strong> 85°F</p>
+                        <p><strong>Low:</strong> 52°F</p>
+                        <p><strong>Humidity:</strong> 34%</p>
+                        <p><strong>Sunrise:</strong> 7:30am</p>
+                        <p><strong>Sunset:</strong> 9:59pm</p>
+                    </div>
+                </div>
             </div>
             <div class="forecast">
                 <h2>Weather Forecast</h2>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
+                <div class="forecast-content">
+                    <p><strong>Today:</strong> 90°F</p>
+                    <p><strong>Wednesday:</strong> 89°F</p>
+                    <p><strong>Thursday:</strong> 68°F</p>
+                </div>
             </div>
         </section>
 
         <section class="business-list">
             <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Email: info@gmail.com</p>
-                <p>Phone: 800-555-1234</p>
-                <p>URL: mybusiness.com</p>
+                <h3>Teach Innovators</h3>
+                <p class="tagline">Leading the Future of Technology</p>
+                <div class="business-content">
+                    <div class="business-image">
+                        <img src="images/tech.webp" alt="Technology">
+                    </div>
+                    <div class="business-info">
+                        <p><strong>EMAIL:</strong> contact@techinnovators.com</p>
+                        <p><strong>PHONE:</strong> 800-555-1234</p>
+                        <p><strong>URL:</strong> techinnovators.com</p>
+                    </div>
+                </div>
             </div>
             <div class="business-card">
-                h3>Business Name</h3>
-                <p>Email: info@gmail.com</p>
-                <p>Phone: 800-555-1234</p>
-                <p>URL: mybusiness.com</p>
-            </div>
-            <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Email: info@gmail.com</p>
-                <p>Phone: 800-555-1234</p>
-                <p>URL: mybusiness.com</p>
+                <h3>Eco Solutions</h3>
+                <p class="tagline">Sustainable Solutions for a Greener Tomorrow</p>
+                <div class="business-content">
+                    <div class="business-image">
+                        <img src="images/eco.webp" alt="Eco">
+                    </div>
+                    <div class="business-info">
+                        <p><strong>EMAIL:</strong> info@ecosolutions.com</p>
+                        <p><strong>PHONE:</strong> 800-555-1234</p>
+                        <p><strong>URL:</strong> ecosolutions.com</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> 🤖 Jorge Antonio Barrón Román 🦾, Mexico.</p>
-        <p id="lastModified"></p>
-        <div class="social-media">
-            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Monterrey Business Network</strong></p>
+                <p>10 Paseo de los Leones</p>
+                <p>Monterrey, Mexico 999</p>
+                <p>info@mtybusnet.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+            <div class="social-media">
+                <img src="images/youtube.svg" alt="YouTube">
+                <img src="images/twitter.svg" alt="Twitter">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </div>
+            <p class="footer-note">WDD231 Class Project</p>
+            <p>Jorge Antonio Barron Roman</p>
+            <p>&copy; <span id="currentYear"></span> Monterrey Business Network</p>
+            <p id="lastModified"></p>
         </div>
     </footer>
 </body>
