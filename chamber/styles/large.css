@@ -1,17 +1,95 @@
-@media only screen and (min-width: 38rem) { 
-   nav {
-        display: flex !important;
-        position: static;
-        flex-direction: row;
-        background: none;
+@media screen and (min-width: 768px) {
+    .logo { 
+        margin-left: 8rem;
     }
 
-    ul.menu-links {
+    nav {
+        flex-grow: 1;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex !important;  
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: static;  
+        width: auto; 
+        background: none; /
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 10px 15px;
+        transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+        background: #555;
+        border-radius: 5px;
     }
 
     #menu-icon {
-        display: none;
+        display: none !important;
     }
+
+    .hero {
+        width: 100%;
+        max-height: 400px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd; 
+        overflow: hidden; 
+    }
+
+    .hero img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info { 
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        gap: 1rem;
+        margin: 2rem auto;
+        max-width: 120rem;
+        align-items: start;
+    }
+
+    .events, .weather, .forecast { 
+        min-height: 20rem;
+        overflow: hidden;
+    }
+
+    .events-content{ 
+        padding: 4rem;
+        font-size: 1.5rem;
+    }
+    
+    .forecast-content { 
+        padding-top: 5rem;
+        font-size: 1.2rem;
+    }
+    
+    .business-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: auto 5rem;   
+    }   
+
+    .footer-content { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    };
 }
