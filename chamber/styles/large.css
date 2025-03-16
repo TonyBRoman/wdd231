@@ -67,13 +67,26 @@
         padding-top: 5rem;
         font-size: 1.2rem;
     }
+
+    #toggle-view {
+        display: block;
+    }
     
+
     .business-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin: auto 5rem;   
+        align-items: stretch;
     }   
+
+    .list-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: auto;
+    }
 
     .footer-content { 
         display: grid;

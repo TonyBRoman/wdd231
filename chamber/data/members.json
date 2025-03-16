@@ -5,7 +5,7 @@
         "phone": "800-555-1234",
         "email": "contact@techinnovators.com",
         "website": "https://techinnovators.com",
-        "image": "images/tech.webp",
+        "image": "images/tech-ino.webp",
         "membership": 3,
         "tagline": "Leading the Future of Technology"
     },
@@ -45,7 +45,7 @@
         "phone": "800-555-3344",
         "email": "info@smarthomes.com",
         "website": "https://smarthomes.com",
-        "image": "images/home.webp",
+        "image": "images/smarth.webp",
         "membership": 2,
         "tagline": "Building the Homes of Tomorrow"
     },
@@ -65,7 +65,7 @@
         "phone": "800-555-7788",
         "email": "info@greenenergy.com",
         "website": "https://greenenergy.com",
-        "image": "images/energy.webp",
+        "image": "images/green.webp",
         "membership": 3,
         "tagline": "Powering the Future with Clean Energy"
     }
