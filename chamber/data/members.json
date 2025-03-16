@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Teach Innovators",
+        "address": "123 Tech Street, Monterrey, NL",
+        "phone": "800-555-1234",
+        "email": "contact@techinnovators.com",
+        "website": "https://techinnovators.com",
+        "image": "images/tech.webp",
+        "membership": 3,
+        "tagline": "Leading the Future of Technology"
+    },
+    {
+        "name": "Eco Solutions",
+        "address": "456 Greenway Ave, Monterrey, NL",
+        "phone": "800-555-5678",
+        "email": "info@ecosolutions.com",
+        "website": "https://ecosolutions.com",
+        "image": "images/eco.webp",
+        "membership": 2,
+        "tagline": "Sustainable Solutions for a Greener Tomorrow"
+    },
+    {
+        "name": "Auto Smart",
+        "address": "789 Auto Lane, Monterrey, NL",
+        "phone": "800-555-9101",
+        "email": "support@autosmart.com",
+        "website": "https://autosmart.com",
+        "image": "images/auto.webp",
+        "membership": 1,
+        "tagline": "Driving Innovation Forward"
+    },
+    {
+        "name": "Health First",
+        "address": "321 Wellness Rd, Monterrey, NL",
+        "phone": "800-555-1122",
+        "email": "contact@healthfirst.com",
+        "website": "https://healthfirst.com",
+        "image": "images/health.webp",
+        "membership": 3,
+        "tagline": "Your Health, Our Priority"
+    },
+    {
+        "name": "Smart Homes",
+        "address": "654 Future St, Monterrey, NL",
+        "phone": "800-555-3344",
+        "email": "info@smarthomes.com",
+        "website": "https://smarthomes.com",
+        "image": "images/home.webp",
+        "membership": 2,
+        "tagline": "Building the Homes of Tomorrow"
+    },
+    {
+        "name": "EduTech Hub",
+        "address": "987 Learning Blvd, Monterrey, NL",
+        "phone": "800-555-5566",
+        "email": "contact@edutechhub.com",
+        "website": "https://edutechhub.com",
+        "image": "images/edu.webp",
+        "membership": 1,
+        "tagline": "Empowering Minds with Technology"
+    },
+    {
+        "name": "Green Energy",
+        "address": "159 Solar St, Monterrey, NL",
+        "phone": "800-555-7788",
+        "email": "info@greenenergy.com",
+        "website": "https://greenenergy.com",
+        "image": "images/energy.webp",
+        "membership": 3,
+        "tagline": "Powering the Future with Clean Energy"
+    }
+]

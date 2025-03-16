@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function () {
     // Current Year
     const currentYearEl = document.getElementById("currentYear");
     if (currentYearEl) {
@@ -9,12 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     if (lastModifiedEl) {
         lastModifiedEl.textContent = `Last Update: ${document.lastModified}`;
     }
-
+    // Menu 
     const hamburgerElement = document.querySelector('#menu-icon');
     const navElement = document.querySelector('#animation');
 
-    hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-});
+    if (hamburgerElement && navElement) {
+        hamburgerElement.addEventListener('click', () => {
+            navElement.classList.toggle('open');
+            hamburgerElement.classList.toggle('open');
+        });
+    } 
+
 })
