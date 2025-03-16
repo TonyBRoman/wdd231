@@ -24,19 +24,6 @@
         background: none; /
     }
 
-    nav a {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-        padding: 10px 15px;
-        transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-        background: #555;
-        border-radius: 5px;
-    }
-
     #menu-icon {
         display: none !important;
     }
