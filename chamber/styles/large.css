@@ -91,5 +91,14 @@
     .footer-content { 
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
-    };
+        justify-content: center;
+        width: 100%;
+        gap: clamp(1rem, 15vw, 24rem);
+    }
+    
+    .contact-info p, .details p {
+        white-space: nowrap; 
+        margin: 2px 0;
+        font-size: 0.9rem;
+    }
 }
