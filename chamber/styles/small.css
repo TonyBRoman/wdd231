@@ -285,6 +285,7 @@ section .business-card h3, .tagline {
 #toggle-view {
     display: none;
 }
+
 .toggle-button {
     display: flex;
     justify-content: center;
