@@ -1,0 +1,21 @@
+h1, footer {
+    background-color: #f1bd00;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    border: none;
+    background: linear-gradient(135deg, rgba(214, 237, 241, 0.747), #2a7dae);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+main p, figcaption {
+    padding: 1rem;
+}
+
