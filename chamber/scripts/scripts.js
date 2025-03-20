@@ -99,7 +99,7 @@ const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise'); 
 const sunset = document.querySelector('#sunset');  
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=25.69&lon=-100.32&units=metric&appid=';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=25.69&lon=-100.32&units=metric&appid=aecb17add2375f7114f5286dd070c1af';
 
 async function apiFecth() { 
     try {
@@ -119,7 +119,8 @@ async function apiFecth() {
 // Change the time to AM/PM
 function formatTime(unixTimestamp, timezoneOffset) {
     const date = new Date((unixTimestamp + timezoneOffset) * 1000);
-    return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true});
+    return date.toLocaleTimeString('en-US', 
+        { hour: '2-digit', minute: '2-digit', hour12: true});
 }
 
 function displayResults(data) { 
@@ -130,7 +131,7 @@ function displayResults(data) {
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    weatherIcon.setAttribute('SRC', iconsrc)
+    weatherIcon.setAttribute('src', iconsrc)
     weatherIcon.setAttribute('alt', data.weather[0].description)
 
     const timezoneOffset = data.timezone;
