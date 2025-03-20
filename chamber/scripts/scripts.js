@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", async function () {
+
+    // Get the Year 
     const currentYearEl = document.getElementById("currentYear");
     if (currentYearEl) {
         currentYearEl.textContent = `${new Date().getFullYear()}`;
     }
+
+    // Get the Date
     const lastModifiedEl = document.getElementById("lastModified");
     if (lastModifiedEl) {
         lastModifiedEl.textContent = `Last Update: ${document.lastModified}`;
     }
+
+    // Hamburger Icon
     const hamburgerElement = document.querySelector("#menu-icon");
     const navElement = document.querySelector("#animation");
     if (hamburgerElement && navElement) {
@@ -16,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     }
 
+    // Business Section
     const businessSection = document.querySelector(".business-list");
     const toggleButton = document.getElementById("toggle-view");
     let businessesData = []; 
@@ -32,12 +39,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     function displayBusinesses(viewType) {
-        if (!businessSection || !businessesData.length) return;
+        if (!businessSection || businessesData.length === 0) return;
 
-        businessSection.innerHTML = "";
+        businessSection.innerHTML = ""; 
         businessSection.classList.toggle("list-layout", viewType === "list");
 
-        businessesData.forEach(business => {
+        const shuffledBusinesses = [...businessesData]
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 3);
+
+        shuffledBusinesses.forEach(business => {
             const businessCard = document.createElement("div");
             businessCard.classList.add("business-card");
             if (viewType === "list") businessCard.classList.add("list-view");
@@ -62,6 +73,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     }
 
+    // Toggle 
     function toggleView() {
         const isGrid = businessSection.classList.contains("list-layout");
         displayBusinesses(isGrid ? "grid" : "list");
@@ -69,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const iconEl = document.getElementById("icon");
         if (iconEl) {
             iconEl.src = isGrid ? "images/grid.png" : "images/list.png";
-            iconEl.alt = isGrid ? "Grid View" : "List View"
+            iconEl.alt = isGrid ? "Grid View" : "List View";
         }
     }
 
@@ -82,14 +94,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    await fetchBusinesses();
+    fetchBusinesses();
+
     if (toggleButton) {
         toggleButton.addEventListener("click", toggleView);
     }
 });
 
 // Weather 
-
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#description'); 
@@ -106,7 +118,7 @@ async function apiFecth() {
         const response = await fetch(url);``
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayResults(data);
         } else {
             throw new Error(await response.text());
