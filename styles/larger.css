@@ -70,7 +70,7 @@
 
     main { 
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0 70px;
         margin: auto;
         padding: 20px 70px;

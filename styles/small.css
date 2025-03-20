@@ -136,11 +136,12 @@ section ul {
 }
 
 .image-size {
-    width: 100%;
+    width: 40%;
     max-width: 350px;
     height: auto;
+    padding: .5rem;
     display: block;
-    margin: 0 auto;
+    border-radius: 15px;
 }
 
 figure {
@@ -254,6 +255,26 @@ footer span {
     font-weight: bold;
 }
 
+.monterrey-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
 
+.weather-info {
+    display: flex;
+    flex-direction: column; 
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+}
+.weather-info figcaption { 
+    text-transform: capitalize;
+}
 
-
+#weater-icon { 
+    width: 50px;
+    height: 50px;
+}
