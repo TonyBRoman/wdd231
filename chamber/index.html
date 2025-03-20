@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monterrey Business Network</title>
+    <meta name="description" content="Monterrey Business Network is a plataform that connects
+    entrepreneurs, professionals, and investors. Discover business directories, 
+    networking events, and growth opportunities in Monterrey.">
+    <meta name="author" content="Jorge Antonio Barron Roman">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- FaceBook Social Media Meta -->
+     <meta property="og:title" content="Monterrey Bussines Network">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/515/227/669/ciudad-mexico-monterrey-noche-wallpaper-preview.jpg" />
+     <meta property="og:url" content="https://tonybroman.github.io/wdd231/chamber/directory.html">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/large.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="directory.html">
+                <img src="images/logo.svg" alt="Monterrey Business Network Logo">
+            </a>
+            <div class="text">
+                <span class="city">Monterrey</span>
+                <span class="network">Business Network</span>
+            </div>
+            
+        </div>
+        <nav id="animation">
+            <button id="menu-icon" aria-label="open-menu"></button>
+            <ul class="menu-links">
+                <li class="active"><a href="directory.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="dark-mode-toggle">
+            <img src="images/dark.png" alt="Dark Mode">
+        </button>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/monterrey.jpg" alt="Monterrey">
+            <button class="cta-button">Keynote Tickets</button>
+        </div>
+
+        <h1>Home</h1>
+        <section class="info">
+            <div class="events">
+                <h2>Events</h2>
+                <div class="events-content">
+                    <p>Upcoming Business Conference</p>
+                    <p>Networking Night - March 15</p>
+                    <p>Entrepreneur Workshop</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="" alt="">
+                    <div class="weather-info">
+                        <p><span id="current-temp"></span></p>
+                        <p><span id="description"></span></p>
+                        <p><span id="high"></span></p>
+                        <p><span id="low"></span></p>
+                        <p><span id="humidity"></span></p>
+                        <p><span id="sunrise"></span></p>
+                        <p><span id="sunset"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-content">
+                    <p><strong>Today:</strong> 90°F</p>
+                    <p><strong>Wednesday:</strong> 89°F</p>
+                    <p><strong>Thursday:</strong> 68°F</p>
+                </div>
+            </div>
+        </section>
+        <div class="toggle-button">
+            <button id="toggle-view">
+                <img id="icon" src="images/grid.png" alt="Toggle View">
+            </button>
+        </div>
+        <div class="business-list"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Monterrey Business Network</strong></p>
+                <p>10 Paseo de los Leones</p>
+                <p>Monterrey, Mexico 999</p>
+                <p>info@mtybusnet.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+            <div class="social-media">
+                <img src="images/youtube.svg" alt="YouTube">
+                <img src="images/twitter.svg" alt="Twitter">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </div>
+            <div class="details">
+                <p>WDD231 Class Project</p>
+                <p>Jorge Antonio Barron Roman</p>
+                <p>&copy; <span id="currentYear"></span> Monterrey Business Network</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

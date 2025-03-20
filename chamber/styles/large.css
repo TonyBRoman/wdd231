@@ -54,12 +54,12 @@
     }
 
     .events, .weather, .forecast { 
-        min-height: 20rem;
+        min-height: 17.5rem;
         overflow: hidden;
     }
 
     .events-content{ 
-        padding: 4rem;
+        padding: 3rem;
         font-size: 20px;
     }
     

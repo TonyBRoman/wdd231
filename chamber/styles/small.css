@@ -237,24 +237,26 @@ h1 {
 .weather-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: flex-start;
+    padding: .5rem;
 }
 
-.weather-icon img {
-    width: 80px;
+.weather-content img {
+    width: 6.5rem;
     height: auto;
-    margin-right: 10px;
 }
 
-.weather-details p {
-    margin: 5px 0;
-    font-size: 1rem;
+.weather-info { 
+    text-align: left;
 }
 
-.temperature {
-    font-size: 1.5rem;
+#current-temp { 
+    font-size: 1.2rem;
     font-weight: bold;
+}
+
+#description {
+    text-transform: capitalize;
 }
 
 .forecast-content {

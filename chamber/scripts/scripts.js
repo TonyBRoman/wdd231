@@ -87,3 +87,56 @@ document.addEventListener("DOMContentLoaded", async function () {
         toggleButton.addEventListener("click", toggleView);
     }
 });
+
+// Weather 
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#description'); 
+const highTemp = document.querySelector('#high'); 
+const lowTemp = document.querySelector('#low'); 
+const humidity = document.querySelector('#humidity'); 
+const sunrise = document.querySelector('#sunrise'); 
+const sunset = document.querySelector('#sunset');  
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=25.69&lon=-100.32&units=metric&appid=';
+
+async function apiFecth() { 
+    try {
+        const response = await fetch(url);``
+        if (response.ok) {
+            const data = await response.json();
+            // console.log(data);
+            displayResults(data);
+        } else {
+            throw new Error(await response.text());
+        }
+    } catch (error){
+        console.error('There was an error: ', error);
+    }
+}
+
+// Change the time to AM/PM
+function formatTime(unixTimestamp, timezoneOffset) {
+    const date = new Date((unixTimestamp + timezoneOffset) * 1000);
+    return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true});
+}
+
+function displayResults(data) { 
+    captionDesc.innerHTML = data.weather[0].description;
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    highTemp.innerHTML = `High: ${data.main.temp_max}&deg;C`;
+    lowTemp.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
+    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    weatherIcon.setAttribute('SRC', iconsrc)
+    weatherIcon.setAttribute('alt', data.weather[0].description)
+
+    const timezoneOffset = data.timezone;
+    sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise, timezoneOffset)}`;
+    sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset, timezoneOffset)}`;
+
+}
+
+apiFecth();
