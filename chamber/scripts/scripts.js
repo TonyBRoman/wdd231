@@ -129,10 +129,10 @@ async function apiFecth() {
 }
 
 // Change the time to AM/PM
-function formatTime(unixTimestamp, timezoneOffset) {
-    const date = new Date((unixTimestamp + timezoneOffset) * 1000);
-    return date.toLocaleTimeString('en-US', 
-        { hour: '2-digit', minute: '2-digit', hour12: true});
+function formatTime(unixTimestamp) {
+    const date = new Date(unixTimestamp * 1000);
+    const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: userTimeZone});
 }
 
 function displayResults(data) { 
