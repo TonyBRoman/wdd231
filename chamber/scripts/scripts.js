@@ -113,18 +113,18 @@ const sunset = document.querySelector('#sunset');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=25.69&lon=-100.32&units=metric&appid=aecb17add2375f7114f5286dd070c1af';
 
-async function apiFecth() { 
+async function apiFetch() { 
     try {
-        const response = await fetch(url);``
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayResults(data);
         } else {
             throw new Error(await response.text());
         }
     } catch (error){
-        console.error('There was an error: ', error);
+        console.error('There was an error:', error);
     }
 }
 
@@ -132,24 +132,28 @@ async function apiFecth() {
 function formatTime(unixTimestamp) {
     const date = new Date(unixTimestamp * 1000);
     const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: userTimeZone});
+    return date.toLocaleTimeString('en-US', { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        hour12: true, 
+        timeZone: userTimeZone
+    });
 }
 
 function displayResults(data) { 
     captionDesc.innerHTML = data.weather[0].description;
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
-    highTemp.innerHTML = `High: ${data.main.temp_max}&deg;C`;
-    lowTemp.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
+    highTemp.innerHTML = `High: ${Math.round(data.main.temp_max)}&deg;C`;
+    lowTemp.innerHTML = `Low: ${Math.round(data.main.temp_min)}&deg;C`;
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    weatherIcon.setAttribute('src', iconsrc)
-    weatherIcon.setAttribute('alt', data.weather[0].description)
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
 
-    const timezoneOffset = data.timezone;
-    sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise, timezoneOffset)}`;
-    sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset, timezoneOffset)}`;
+    sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise)}`;
+    sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;
 
 }
 
-apiFecth();
+apiFetch();
