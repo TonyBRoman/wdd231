@@ -44,6 +44,11 @@
         object-fit: cover;
     }
 
+    .cta-button {
+        bottom: 50px;
+        right: 100px;
+    }
+
     .info { 
         display: grid;
         grid-template-columns: 3fr 1fr 1fr;
