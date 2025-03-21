@@ -123,7 +123,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayResults(data);
         } else {
             throw new Error(await response.text());
@@ -168,6 +168,7 @@ function displayResults(data) {
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    // console.log("icon Url:", data.weather[0].icon);
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
 
