@@ -167,10 +167,14 @@ function displayResults(data) {
     lowTemp.innerHTML = `Low: ${Math.round(data.main.temp_min)}&deg;C`;
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    // console.log("icon Url:", data.weather[0].icon);
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
+    if (data.weather[0].icon) {
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        // console.log("icon Url:", data.weather[0].icon);
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('alt', data.weather[0].description);
+    }
+
+    
 
     sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise)}`;
     sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;
