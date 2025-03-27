@@ -109,7 +109,7 @@ function displayCourses(filter = 'All') {
         }
 
         courseCard.textContent = `${course.subject} ${course.number}`;
-        courseCard.addEventListener('click', () => displayCourseDetails(course)); // = `${course.subject} ${course.number}`;
+        courseCard.addEventListener('click', () => displayCourseDetails(course));
 
         courseContainer.appendChild(courseCard);
     });
@@ -130,15 +130,27 @@ function displayCourseDetails(course) {
     
     courseDetails.showModal();
 
-    const closeModal = document.getElementById('course-modal');
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
+    function closeWithAnimation() {
+        courseDetails.classList.add('closing');
+
+        courseDetails.addEventListener('animationend', () => {
+            courseDetails.classList.remove('closing');
+            courseDetails.close();
+        }, {once: true });
+    }
+
+     // Close button (X)
+     document.getElementById('course-modal').addEventListener("click", closeWithAnimation);
+     
+    // Close by clicking outside the dialog box, added for better experience
+    courseDetails.addEventListener("click", (event) => {
+        if (event.target === courseDetails) {
+            closeWithAnimation();
+        }
     });
 
-    courseDiv.addEventListener('click', () => {
-        displayCourseDetails(course);
-    });
-    
+    // courseDiv is deleted because it show me errors.
+    // not necessary because displayCourses is already there. 
 }
 
 document.getElementById('btn-all').addEventListener('click', () => displayCourses('All'));
@@ -171,7 +183,7 @@ async function apiFecth() {
 
 function displayResults(data) { 
     captionDesc.innerHTML = data.weather[0].description
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('SRC', iconsrc)
     weatherIcon.setAttribute('alt', data.weather[0].description)

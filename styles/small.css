@@ -127,7 +127,8 @@ section h2 {
     color: white;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
     text-align: center;
 }
 
@@ -136,10 +137,10 @@ section ul {
 }
 
 .image-size {
-    width: 40%;
+    width: 50%;
     max-width: 350px;
     height: auto;
-    padding: .5rem;
+    margin: .5rem ;
     display: block;
     border-radius: 15px;
 }
@@ -154,11 +155,6 @@ figcaption {
     color: black;
     margin-top: 5px;
     font-style: italic;
-}
-
-.container li {
-    padding: .5rem;
-    margin-left: 1.5rem;
 }
 
 .filters {
@@ -213,22 +209,24 @@ figcaption {
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
+    background-color: #e4c2c2;
+    border: 2px solid #8b4c4c;
+    color: black !important; /*  */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.course-card.cse {
-    background-color: #ffcccb;
-    
+.course-card:hover { 
+    transform: scale(1.02);
 }
 
-.course-card.wdd {
-    background-color: #add8e6;
+.course-card:active { 
+    transform: scale(0.98) translateY(-3px);
 }
 
 .course-card.completed {
-    background-color: #4da768 !important;
-    border: 2px solid #2d882d;
+    background-color: #7bc892 !important;
+    border: 2px solid #286928;
 }
 
 #credit-counter { 
@@ -236,6 +234,58 @@ figcaption {
     font-style: italic;
     text-align: center;
     margin-top: 10px;
+}
+
+dialog { 
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(23, 23, 23, 0.1);
+    width: 90%;
+    max-width: 650px;
+}
+
+::backdrop { 
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+dialog button { 
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.1);
+}
+
+@keyframes fadeInScale { 
+    from { 
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to { 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutScale { 
+    from { 
+        opacity: 1;
+        transform: scale(1);
+    }
+    to { 
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+dialog[open] { 
+    animation: fadeInScale 0.3s ease-out;
+}
+
+dialog.closing { 
+    animation: fadeOutScale 0.3s ease-out;
 }
 
 footer {
@@ -268,7 +318,11 @@ footer span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
+}
+
+.weather-info p {
+    padding-top: 1rem;
 }
 .weather-info figcaption { 
     text-transform: capitalize;
@@ -277,26 +331,4 @@ footer span {
 #weater-icon { 
     width: 50px;
     height: 50px;
-}
-
-dialog { 
-    border: none;
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(23, 23, 23, 0.1);
-    width: 90%;
-    max-width: 600px;
-}
-
-::backdrop { 
-    background-color: rgb(0, 0, 0 / 0.5);
-}
-
-dialog button { 
-    position: absolute;
-    top: 23px;
-    right: 23px;
-    padding: .5rem 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.1);
 }
