@@ -145,6 +145,10 @@ section ul {
     border-radius: 15px;
 }
 
+.certificate p { 
+    padding-top: 2rem;
+}
+
 figure {
     margin: 0;
 }

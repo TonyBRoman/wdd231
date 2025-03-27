@@ -103,10 +103,7 @@
     .certificate h2 { 
         width: 100%;
     }
-    .certificate p { 
-        padding-top: 2rem;
-    }
-    
+ 
     #course-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
