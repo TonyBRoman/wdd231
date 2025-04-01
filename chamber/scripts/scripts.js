@@ -196,6 +196,10 @@ function formatTime(unixTimestamp) {
 }
 
 function displayResults(data) { 
+    if (!currentTemp || !captionDesc || !weatherIcon || !highTemp || !lowTemp || !humidity || !sunrise || !sunset) {
+        return; 
+    }
+
     captionDesc.innerHTML = data.weather[0].description;
     currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
     currentTempForecast.innerHTML = `Today: ${Math.round(data.main.temp)}&deg;C`;
@@ -212,10 +216,14 @@ function displayResults(data) {
 
     sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise)}`;
     sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;
-
+    
 }
 
 function displayForecast(data) {
+    if (!forecastDay1 || !forecastDay2) {
+        return;
+    }
+
     const dailyForecast = {};
     const today = new Date().toISOString().split('T')[0];
 
@@ -269,29 +277,31 @@ window.addEventListener('click', function(event) {
     }
 });
 
+const userInfoContainer = document.querySelector('#user-info');
+if (userInfoContainer) { 
+    const myInfo = new URLSearchParams(window.location.search);
 
-const myInfo = new URLSearchParams(window.location.search);
-
-document.querySelector('#user-info').innerHTML = `
-    <div class="info-container">
-        <h1>Thank You for Enrolling!</h1>
-        <p>Dear <strong>${myInfo.get('first-name')} ${myInfo.get('last-name')}</strong>,</p>
-        <p>We have received your enrollment request. Here are your details:</p>
-        <div class="user-details">
-            <div class="detail">
-                <span class="label">📧 Email:</span> 
-                <span class="value">${myInfo.get('email')}</span>
+    document.querySelector('#user-info').innerHTML = `
+        <div class="info-container">
+            <h1>Thank You for Enrolling!</h1>
+            <p>Dear <strong>${myInfo.get('first-name')} ${myInfo.get('last-name')}</strong>,</p>
+            <p>We have received your enrollment request. Here are your details:</p>
+            <div class="user-details">
+                <div class="detail">
+                    <span class="label">📧 Email:</span> 
+                    <span class="value">${myInfo.get('email')}</span>
+                </div>
+                <div class="detail">
+                    <span class="label">📞 Phone:</span> 
+                    <span class="value">${myInfo.get('phone')}</span>
+                </div>
+                <div class="detail">
+                    <span class="label">🏢 Business/Organization:</span> 
+                    <span class="value">${myInfo.get('organization')}</span>
+                </div>
             </div>
-            <div class="detail">
-                <span class="label">📞 Phone:</span> 
-                <span class="value">${myInfo.get('phone')}</span>
-            </div>
-            <div class="detail">
-                <span class="label">🏢 Business/Organization:</span> 
-                <span class="value">${myInfo.get('organization')}</span>
-            </div>
+            <p>We will contact you soon with more information.</p>
+            <a href="index.html" class="return-btn">Return to Home</a>
         </div>
-        <p>We will contact you soon with more information.</p>
-        <a href="index.html" class="return-btn">Return to Home</a>
-    </div>
-`;
+    `;
+}
