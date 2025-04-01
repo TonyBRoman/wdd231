@@ -268,3 +268,30 @@ window.addEventListener('click', function(event) {
         event.target.style.display = 'none';
     }
 });
+
+
+const myInfo = new URLSearchParams(window.location.search);
+
+document.querySelector('#user-info').innerHTML = `
+    <div class="info-container">
+        <h1>Thank You for Enrolling!</h1>
+        <p>Dear <strong>${myInfo.get('first-name')} ${myInfo.get('last-name')}</strong>,</p>
+        <p>We have received your enrollment request. Here are your details:</p>
+        <div class="user-details">
+            <div class="detail">
+                <span class="label">📧 Email:</span> 
+                <span class="value">${myInfo.get('email')}</span>
+            </div>
+            <div class="detail">
+                <span class="label">📞 Phone:</span> 
+                <span class="value">${myInfo.get('phone')}</span>
+            </div>
+            <div class="detail">
+                <span class="label">🏢 Business/Organization:</span> 
+                <span class="value">${myInfo.get('organization')}</span>
+            </div>
+        </div>
+        <p>We will contact you soon with more information.</p>
+        <a href="index.html" class="return-btn">Return to Home</a>
+    </div>
+`;
