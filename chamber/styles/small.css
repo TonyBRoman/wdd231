@@ -632,18 +632,18 @@ footer {
 
 .label {
     font-weight: bold;
-    color: #555;
+    color: var(--primary-color);
 }
 
 .value {
-    color: #0073e6;
+    color: var(--primary-color);
 }
 
 .return-btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.7rem 1.2rem;
-    background: #0073e6;
+    background: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -651,5 +651,5 @@ footer {
 }
 
 .return-btn:hover {
-    background: #005bb5;
+    background: var(--secondary-color);
 }
