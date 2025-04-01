@@ -241,3 +241,30 @@ function displayForecast(data) {
 
 apiFetch();
 fetchForecast();
+
+// Open and close modals
+document.querySelectorAll('.info-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const targetModalId = this.getAttribute('data-target');
+        const targetModal = document.querySelector(targetModalId);
+        if (targetModal) {
+            targetModal.style.display = 'block';
+        }
+    });
+});
+
+document.querySelectorAll('.close-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+// Close modal if clicked outside the modal content
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+    }
+});

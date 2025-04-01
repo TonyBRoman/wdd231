@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monterrey Business Network</title>
+    <title>Membership Enrollment</title>
     <meta name="description" content="Monterrey Business Network is a plataform that connects
     entrepreneurs, professionals, and investors. Discover business directories, 
     networking events, and growth opportunities in Monterrey.">
     <meta name="author" content="Jorge Antonio Barron Roman">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- FaceBook Social Media Meta -->
      <meta property="og:title" content="Monterrey Bussines Network">
      <meta property="og:type" content="website">
@@ -46,9 +46,9 @@
         </button>
     </header>
 
-    <main>
+    <main class="enroll">
         <section class="enroll-form">
-            <h2>Membership Enrollment</h2>
+            <h1>Membership Enrollment</h1>
             <p>Enroll to get information about our membership plans and benefist</p>
 
             <form action="thankyou.html" method="get" class="form">
@@ -89,15 +89,86 @@
                         </select>
                     </label>
 
-                    <label for="description">
+                    <label for="bussines-description">
                         <span>Business/Organization Description:</span>
-                        <textarea name="description" id="description" title="Describe your business or organization"></textarea>
+                        <textarea name="bussines-description" id="bussines-description" title="Describe your business or organization"></textarea>
                     </label>
                     <input type="hidden" id="timestamp" name="timestamp">
                 </fieldset>
 
                 <button type="submit" class="button-form">Continue</button>
             </form>
+        </section>
+        
+        <section class="membership-cards">
+            <div class="membership-card" id="np-membership">
+                <h3>NP Membership</h3>
+                <p>No Fee, for Non-Profit Organizations</p>
+                <button class="info-btn" data-target="#np-modal">More Info</button>
+            </div>
+            <div id="np-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>Free membership</li>
+                        <li>Access to all basic events</li>
+                        <li>Spotlight position on the homepage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="membership-card" id="bronze-membership">
+                <h3>Bronze Membership</h3>
+                <p>Basic Membership</p>
+                <button class="info-btn" data-target="#bronze-modal">More Info</button>
+            </div>
+            <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>Discounted event tickets</li>
+                        <li>Access to certain training materials</li>
+                        <li>Basic promotion on the website</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="membership-card" id="silver-membership">
+                <h3>Silver Membership</h3>
+                <p>Intermediate Level</p>
+                <button class="info-btn" data-target="#silver-modal">More Info</button>
+            </div>
+            <div id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>Special event access</li>
+                        <li>Additional training materials</li>
+                        <li>Priority placement on the website</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="membership-card" id="gold-membership">
+                <h3>Gold Membership</h3>
+                <p>Premium Membership</p>
+                <button class="info-btn" data-target="#gold-modal">More Info</button>
+            </div>
+            <div id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>Exclusive events and discounts</li>
+                        <li>Full access to all resources</li>
+                        <li>Premium promotion on the website</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
         
     </main>

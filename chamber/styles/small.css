@@ -370,7 +370,7 @@ footer {
     box-sizing: border-box;
 }
 
-.enroll-form h2, p {
+.enroll-form h1, p {
     text-align: center;
 }
 
@@ -442,3 +442,159 @@ footer {
 .button-form:hover {
     background-color: var(--secondary-color);
 }
+
+.enroll { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.membership-cards { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.membership-card { 
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card h3 { 
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.membership-card p { 
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#bronze-membership {
+    background-color: #da924a; 
+    color: black;
+}
+
+#silver-membership {
+    background-color: #c0c0c0; 
+    color: black;
+}
+
+#gold-membership {
+    background-color: #ffd700; 
+    color: black;
+}
+
+.membership-card h3, 
+.membership-card p {
+    color: inherit;
+}
+
+.info-btn { 
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.info-btn:hover { 
+    background-color: var(--secondary-color);
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: auto; 
+    animation: fadeIn 0.5s ease-out;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px; 
+    right: 20px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 1001; 
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    transform: scale(1.2); 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-content ul {
+    font-size: 1.1rem;
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.modal-content ul li {
+    color: #555;    
+}
+

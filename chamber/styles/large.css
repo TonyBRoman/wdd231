@@ -108,8 +108,20 @@
     }
 
     .enroll-form {
+        flex: 1;
         max-width: 500px;
         margin: 2rem auto;;
         padding: 25px;
     }
+
+    .enroll { 
+        flex-direction: row;
+        margin-right: 5rem;
+    }
+
+    .membership-cards {
+        flex: 1;
+        max-width: 500px;
+    }
+
 }
