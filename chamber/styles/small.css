@@ -360,3 +360,85 @@ footer {
     width: 4rem;
     margin: 5px;
 }
+
+.enroll-form {
+    max-width: 400px;
+    margin: 1.5rem;
+    padding: 20px;
+    background-color: #eeefe3;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.enroll-form h2, p {
+    text-align: center;
+}
+
+.form fieldset { 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+}
+
+.form legend { 
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    padding: 0.5rem 1rem 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form label {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: normal;
+}
+
+.form label span { 
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.form input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+
+.form input:required:invalid {
+    border-right: solid 8px red;
+}
+
+.form input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.button-form {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.button-form:hover {
+    background-color: var(--secondary-color);
+}

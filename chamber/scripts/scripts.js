@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         lastModifiedEl.textContent = `Last Update: ${document.lastModified}`;
     }
 
+    const timestampField = document.getElementById("timestamp");
+    if (timestampField) {
+        const now = new Date();
+        const formattedDate = now.toISOString();
+        timestampField.value = formattedDate;
+    }
     // Hamburger Icon
     const hamburgerElement = document.querySelector("#menu-icon");
     const navElement = document.querySelector("#animation");
@@ -99,6 +105,36 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (toggleButton) {
         toggleButton.addEventListener("click", toggleView);
     }
+
+    const form =document.querySelector("form");
+
+    if (form) { 
+        form.addEventListener("submit", function (event) {
+            let isValid = true;
+            
+            // Organizational Title validation
+            const titleInput = document.querySelector("[name='organizational-title']");
+            const titlePattern = /^[A-Za-z][A-Za-z\s-]{6,}$/; 
+    
+            if (titleInput && !titlePattern.test(titleInput.value)) {
+                alert("Organizational Title must be at least 7 characters long and contain only letters, spaces, or hyphens.");
+                isValid = false;
+            }
+    
+            // Phone Validation
+            const phoneInput = document.querySelector("[name='phone']");
+            const phonePattern = /^[0-9]{10,15}$/;
+    
+            if (phoneInput && !phonePattern.test(phoneInput.value)) {
+                alert("Please enter a valid phone number.");
+                isValid = false;
+            }
+    
+            if (!isValid) { 
+                event.preventDefault();
+            }
+        });
+    }
 });
 
 // Weather 
@@ -173,8 +209,6 @@ function displayResults(data) {
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', data.weather[0].description);
     }
-
-    
 
     sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise)}`;
     sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;

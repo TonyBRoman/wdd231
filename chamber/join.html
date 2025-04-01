@@ -47,6 +47,58 @@
     </header>
 
     <main>
+        <section class="enroll-form">
+            <h2>Membership Enrollment</h2>
+            <p>Enroll to get information about our membership plans and benefist</p>
+
+            <form action="thankyou.html" method="get" class="form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">
+                        <span>First Name:</span>
+                        <input type="text" name="first-name" id="fname" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+                    <label for="lname">
+                        <span>Last Name:</span>
+                        <input type="text" name="last-name" id="lname" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+                    <label for="organizational-title">
+                        <span>Organizational Title:</span>
+                        <input type="text" name="organizational-title" id="organizational-title" title="Enter your title within the organization" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" placeholder="Manager, Director, etc.">
+                    </label>
+                    <label for="email">
+                        <span>Email:</span>
+                        <input type="email" name="email" id="email" title="Eneter your email address" autocomplete="email" placeholder="monterrey@gmail.com" required>
+                    </label>
+                    <label for="phone">
+                        <span>Mobile Phone:</span>
+                        <input type="tel" name="phone" id="phone" title="Eneter your mobile phone number" autocomplete="tel" required>
+                    </label>
+                    <label for="organization">
+                        <span>Business/Organization Name:</span>
+                        <input type="text" name="organization" id="organization" title="Enter your business or organization's name" autocomplete="organization" required>
+                    </label>
+
+                    <label for="membership">
+                        <span>Membership Level:</span> 
+                        <select name="membership" id="membership">
+                            <option value="np">NP Membership (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        <span>Business/Organization Description:</span>
+                        <textarea name="description" id="description" title="Describe your business or organization"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+
+                <button type="submit" class="button-form">Continue</button>
+            </form>
+        </section>
         
     </main>
 
