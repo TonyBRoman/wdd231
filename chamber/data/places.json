@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Parque Fundidora",
+        "address": "Av. Fundidora & Adolfo Prieto S/N, Obrera, Monterrey, N.L., Mexico",
+        "description": "An iconic urban park with an industrial past, featuring green spaces, museums, and cultural attractions perfect for the whole family.",
+        "image": "images/fundidora.webp"
+    },
+    {
+        "name": "Cerro de la Silla",
+        "address": "Guadalupe & Monterrey, N.L., Mexico",
+        "description": "The symbol of Monterrey, this majestic mountain offers breathtaking views and challenging hiking trails for adventurers.",
+        "image": "images/cerro-silla.webp"
+    },
+    {
+        "name": "Paseo Santa Lucía",
+        "address": "Santa Lucía, Downtown Monterrey, N.L., Mexico",
+        "description": "A beautiful artificial canal where you can enjoy boat rides, urban art, and a vibrant cultural scene.",
+        "image": "images/paseo-santa-lucia.webp"
+    },
+    {
+        "name": "Grutas de García",
+        "address": "Carretera Villa de García Km 10, García, N.L., Mexico",
+        "description": "Impressive caves with ancient rock formations, accessible via a cable car with panoramic views.",
+        "image": "images/grutas-garcia.webp"
+    },
+    {
+        "name": "Bioparque Estrella",
+        "address": "Carretera a Rayones Km 9, Montemorelos, N.L., Mexico",
+        "description": "A wildlife conservation park where you can interact with animals in their habitat and enjoy ecological activities.",
+        "image": "images/bioparque.webp"
+    },
+    {
+        "name": "Museo de Historia Mexicana",
+        "address": "Dr. José Ma. Coss 445, Downtown Monterrey, N.L., Mexico",
+        "description": "An interactive museum showcasing Mexico’s history from its origins to the present with dynamic exhibitions.",
+        "image": "images/museo.webp"
+    },
+    {
+        "name": "Cola de Caballo",
+        "address": "Santiago, N.L., Mexico",
+        "description": "A stunning waterfall surrounded by lush vegetation, perfect for hiking and enjoying nature.",
+        "image": "images/cola-caballo.webp"
+    },
+    {
+        "name": "Chipinque Ecological Park",
+        "address": "Carretera a Chipinque Km 2.5, San Pedro Garza García, N.L., Mexico",
+        "description": "A natural park ideal for hiking, cycling, and observing the region’s flora and fauna, with breathtaking panoramic views.",
+        "image": "images/chipinque.webp"
+    }
+]
