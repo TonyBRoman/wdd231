@@ -12,6 +12,65 @@ document.addEventListener("DOMContentLoaded", async function () {
         lastModifiedEl.textContent = `Last Update: ${document.lastModified}`;
     }
 
+    async function loadPlaces() {
+        try {
+            const response = await fetch("data/places.json");
+            if (!response.ok) throw new Error("Error loading places data");
+            const places = await response.json();
+
+            const container = document.querySelector("#places-container");
+            if(!container) return;
+
+            container.innerHTML = "";
+
+            places.slice(0, 8).forEach(place => { 
+                const card = document.createElement("div");
+                card.classList.add("place-card");
+
+                card.innerHTML = `
+                <h2>${place.name}</h2>
+                    <figure>
+                        <img src="${place.image}" alt="${place.name}" width="300" height="200">
+                    </figure>
+                    <address>${place.address}</address>
+                    <p>${place.description}</p>
+                    <button class="learn-more">Learn More</button>
+                `;
+                container.appendChild(card);
+            });
+        } catch(error) {
+            console.error("Error loading places:", error);
+        }
+    }
+
+    function displayLastVisitMessage() {
+        const sidebar = document.querySelector("#sidebar");
+        if (!sidebar) return;
+
+        const lastVisit = localStorage.getItem("lastVisit");
+        const now = new Date();
+        localStorage.setItem("lastVisit", now.toISOString());
+
+        if (!lastVisit) {
+            sidebar.textContent = "Welcome! Let us know if you have any questions";
+        } else { 
+            const lastVisitDate = new Date(lastVisit);
+            const diffDays = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
+
+            if (diffDays === 0) {
+                sidebar.textContent = "Back so soon! Awesome!";
+            } else if (diffDays === 1) { 
+                sidebar.textContent = "Welcome back! You last visited yesterday.";
+            } else { 
+                sidebar.textContent = `Welcome back! You last visited ${diffDays} days ago.`;
+            }
+        }
+    }
+
+    loadPlaces();
+    displayLastVisitMessage();
+
+
     const timestampField = document.getElementById("timestamp");
     if (timestampField) {
         const now = new Date();

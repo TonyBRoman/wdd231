@@ -667,3 +667,93 @@ footer {
 .return-btn:hover {
     background: var(--secondary-color);
 }
+
+.discover { 
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "description"
+        "places"
+        "sidebar";
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.discover h1 { 
+    grid-area: title;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.discover p { 
+    grid-area: description;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#places-container {
+    grid-area: places;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.place-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.place-card h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.place-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.place-card address {
+    font-style: normal;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+}
+
+.place-card p {
+    font-size: 1rem;
+}
+
+.place-card button {
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.place-card button:hover {
+    background: var(--primary-color);
+}
