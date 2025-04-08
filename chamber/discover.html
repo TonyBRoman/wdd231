@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover</title>
+    <title>Discover - Monterrey Business Network</title>
     <meta name="description" content="Monterrey Business Network is a plataform that connects
     entrepreneurs, professionals, and investors. Discover business directories, 
     networking events, and growth opportunities in Monterrey.">
@@ -23,7 +23,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="directory.html">
+            <a href="index.html">
                 <img src="images/logo.svg" alt="Monterrey Business Network Logo">
             </a>
             <div class="text">
@@ -41,21 +41,23 @@
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-        <button class="dark-mode-toggle">
-            <img src="images/dark.png" alt="Dark Mode">
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+            ◐
         </button>
+        
     </header>
 
     <main>
+        <aside id="sidebar">
+            <p id="visit-message"></p>
+        </aside>
         <div class="discover">
             <h1>Discover Nuevo León</h1>
             <p>Discover the best of the Nuevo León region, a place full of history, nature and culture</p>
             <section id="places-container" class="grid-container"></section>
         </div>
 
-        <aside id="sidebar">
-            <p id="visit-message"></p>
-        </aside>
+        
     </main>
 
     <footer>

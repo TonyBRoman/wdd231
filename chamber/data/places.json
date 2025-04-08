@@ -30,7 +30,7 @@
         "image": "images/bioparque.webp"
     },
     {
-        "name": "Museo de Historia Mexicana",
+        "name": "Museo de Historia",
         "address": "Dr. José Ma. Coss 445, Downtown Monterrey, N.L., Mexico",
         "description": "An interactive museum showcasing Mexico’s history from its origins to the present with dynamic exhibitions.",
         "image": "images/museo.webp"
@@ -42,7 +42,7 @@
         "image": "images/cola-caballo.webp"
     },
     {
-        "name": "Chipinque Ecological Park",
+        "name": "Chipinque Park",
         "address": "Carretera a Chipinque Km 2.5, San Pedro Garza García, N.L., Mexico",
         "description": "A natural park ideal for hiking, cycling, and observing the region’s flora and fauna, with breathtaking panoramic views.",
         "image": "images/chipinque.webp"

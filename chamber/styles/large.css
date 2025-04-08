@@ -128,4 +128,67 @@
         max-width: 500px;
     }
 
+    .discover {
+        grid-template-areas: 
+            "title title title"
+            "description description description"
+            "places places places";
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    .discover h1 {
+        text-align: left;
+    }
+
+    #places-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .place-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .place-card h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .place-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .place-card address {
+        font-style: normal;
+        margin: 0.5rem 0;
+        font-weight: 500;
+    }
+
+    .place-card p {
+        flex-grow: 1;
+        font-size: 1.1rem;
+    }
+
+    .place-card button {
+        align-self: center;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.05rem;
+        border-radius: 6px;
+    }
+
 }
