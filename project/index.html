@@ -8,7 +8,7 @@
     rescuers, and adopters. Discover adoptable cats, learn about pet care, and 
     support animal rescue efforts.For WDD 231 class - Web Frontend Development - Jorge Antonio Barron Roman">
     <meta name="author" content="Jorge Antonio Barron Roman">
-    <link rel="icon" type="" href="">
+    <link rel="icon" href="images/favicon.ico">
     <!-- Facebook Social Media Meta -->
     <meta property="og:title" content="Furrey Hearts">
     <meta property="og:type" content="website">
@@ -22,38 +22,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="" alt="Furry Cats Logo">
-        </a>
-        <div class="text">
-            <span>Furry Cats</span>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Furry Cats Logo" loading="lazy" />
+            <span class="brand">Furry Cats</span>
+          </a>
         </div>
-    </div>
-
-    <nav>
-        <button id="menu-icon" aria-label="open-menu"></button>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#"></a>Meet Our Cats</li>
-            <li><a href="#"></a>Start the Adoption</li>
-        </ul>
-    </nav>
-    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
-        ◐
-    </button>
-  </header>
-
+      
+        <div class="header-actions">
+            <nav>
+            <button id="menu-icon" aria-label="Open menu"></button>
+            <ul class="menu-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Meet Our Cats</a></li>
+                <li><a href="#">Adopt</a></li>
+            </ul>
+            </nav>
+        
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+                ◐ 
+            </button>
+        </div>
+    </header>
+      
+    
   <main>
-    <section id="hero">
+    <section class="hero">
+        <img src="images/cats.webp" alt="Cats" loading="lazy">
         <h1>Welcome to Furry Hearts</h1>
         <p>Connecting loving homes with cats in need of a second chance.</p>
-        <img src="" alt="Cats">
     </section>
     
-    <section>
-        <img src="" alt="Rescued cat">
+    <section class="about-us">
+        <img src="images/rescued_cat.webp" alt="Rescued cat" loading="lazy">
         <div>
             <h2>Why Furry Hearts?</h2>
             <p>
@@ -65,19 +67,30 @@
 
     <section>
         <h2>Meet Our Cats</h2>
-        <div>
+        <div class="meet-cats">
             <article>
-                <img src="" alt="Luna">
+                <img src="images/luna.webp" alt="Luna" loading="lazy">
                 <h3>Luna</h3>
                 <p>2-years-old female. Playfuly and gentle. Loves sunny spots!</p>
+                <button class="btn">More info</button>
             </article>
             <article>
-                <img src="" alt="Meeko">
+                <img src="images/" alt="Meeko" loading="lazy">
+                <h3>Meeko</h3>
                 <p>3-year-old male. Curious explorer. Gets along well with kids.</p>
+                <button class="btn">More info</button>
             </article>
             <article>
-                <img src="" alt="Suky">
+                <img src="images/suki.webp" alt="Suki" loading="lazy">
+                <h3>Suki</h3>
                 <p>1-year-old female. Sweet and clam. Ideal for quiet homes.</p>
+                <button class="btn">More info</button>
+            </article>
+            <article>
+                <img src="images/simba.webp" alt="Simba" loading="lazy">
+                <h3>Simba</h3>
+                <p>2-year-old male. Sweet and clam. Ideal for quiet homes.</p>
+                <button class="btn">More info</button>
             </article>
         </div>
     </section>
@@ -87,9 +100,9 @@
         <p>Ready to open your heart and home to a furry friend? Fill out our online form and we’ll guide you through the next steps.</p>
         <a href="#" class="btn">Adopt a Cat</a>
     </section>
-    <section>
+    <section class="testimonials">
         <h2>Happy Tails</h2>
-        <img src="happy-cat.jpg" alt="Cat cuddling with owner">
+        <img src="images/adoption-testimony1.webp" alt="Cat cuddling with owner" loading="lazy">
         <p>
           "Adopting Mimi was the best decision we've ever made. She's brought so much joy to our home!"
           <br>— Laura, adopted Mimi in 2024
@@ -114,7 +127,6 @@
       <footer>
         <p>&copy; 2025 Furry Hearts. All rights reserved.</p>
       </footer>
-      
-    
+      <script src="script/scripts.js"></script>
 </body>
 </html>
