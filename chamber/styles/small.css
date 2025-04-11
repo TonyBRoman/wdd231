@@ -831,10 +831,9 @@ footer {
     background-color: #1e1e1e;
 }
 
-.dark-mode .discover h1, .place-card h2 {
-    font-size: 1.5rem;
-    color: var(--text-color2);
-    margin-bottom: 0.5rem;
+.dark-mode .discover h1, 
+.dark-mode .place-card h2 {
+    color: var(--text-color2) !important;
 }
 
 .dark-mode .enroll-form { 
