@@ -126,6 +126,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    color: var(--text-color2);
 }
 
 .dark-mode-toggle:hover {
