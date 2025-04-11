@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 setTimeout(() => {
                     article.style.opacity = 1;
-                    article.style.transition = "opacity 0.5s ease";
                 }, 200);
             });
 

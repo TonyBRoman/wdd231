@@ -365,6 +365,7 @@ p {
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cat-card h3 {
@@ -387,6 +388,10 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: .5rem;
+}
+
+.cat-card:hover { 
+    transform: translateY(-5px);
 }
 
 .btn {
@@ -517,13 +522,9 @@ p {
     transition: transform 0.3s ease;
 }
 
-.testimonial:hover {
-    transform: translateY(-5px);
-}
-
 .testimonial img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
