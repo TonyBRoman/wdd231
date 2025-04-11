@@ -721,7 +721,7 @@ footer {
 
 .place-card h2 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     margin-bottom: 0.5rem;
 }
 
