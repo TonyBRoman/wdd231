@@ -58,8 +58,6 @@ header {
   
 .logo img {
     height: 7rem;
-    clip-path: inset(1.8rem 0 2rem 0);
-    padding-bottom: -1rem;
 }
 
 .logo span { 
