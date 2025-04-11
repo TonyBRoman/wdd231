@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 card.innerHTML = `
                 <h2>${place.name}</h2>
                     <figure>
-                        <img src="${place.image}" alt="${place.name}" width="300" height="200">
+                        <img src="${place.image}" alt="${place.name}" width="300" height="200" loadig="lazy">
                     </figure>
                     <address>${place.address}</address>
                     <p>${place.description}</p>
