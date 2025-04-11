@@ -22,7 +22,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Randomize cats
             cats.sort(() => 0.5 - Math.random());
 
-            cats.slice(0, 4).forEach(cat => {
+            const currentPage = window.location.pathname;
+
+            const catsToDisplay = currentPage.includes("cats.html") ? cats : cats.slice(0, 4);
+
+            catsToDisplay.forEach(cat => {
                 const article = document.createElement("article");
                 article.classList.add("cat-card");
                 article.style.opacity = 0;

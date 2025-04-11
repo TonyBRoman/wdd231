@@ -116,6 +116,19 @@
         font-size: 0.9rem;
     }
       
+    .cta-adopt, .requirements,
+    .adoption-steps {
+        padding: 2rem;
+    }
 
+    #cats-container { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    #cats-container .cat-card { 
+        margin: auto 25px;
+    }
     
 }
