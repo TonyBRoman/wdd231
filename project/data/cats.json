@@ -1,103 +1,165 @@
 [
-    {
-      "name": "Luna",
-      "image": "images/luna.webp",
-      "age": "2-years-old",
-      "gender": "Female",
-      "description": "Playful and gentle. Loves sunny spots!",
-      "hobbies": ["Sunbathing", "Chasing shadows", "Watching birds"],
-      "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Meeko",
-      "image": "images/meeko.webp",
-      "age": "3-year-old",
-      "gender": "Male",
-      "description": "Curious explorer. Gets along well with kids.",
-      "hobbies": ["Exploring new places", "Climbing", "Chasing toys"],
-      "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Suki",
-      "image": "images/suki.webp",
-      "age": "1-year-old",
-      "gender": "Female",
-      "description": "Sweet and calm. Ideal for quiet homes.",
-      "hobbies": ["Sleeping", "Cuddling", "Slow walks"],
-      "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Simba",
-      "image": "images/simba.webp",
-      "age": "2-year-old",
-      "gender": "Male",
-      "description": "Friendly and playful. Loves to cuddle.",
-      "hobbies": ["Cuddling", "Playing with balls", "Climbing"],
-      "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Milo",
-      "image": "images/milo.webp",
-      "age": "4-year-old",
-      "gender": "Male",
-      "description": "Independent but affectionate. Loves toys.",
-      "hobbies": ["Playing with strings", "Exploring", "Climbing shelves"],
-      "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Nala",
-      "image": "images/nala.webp",
-      "age": "1-year-old",
-      "gender": "Female",
-      "description": "Very social and loves attention.",
-      "hobbies": ["Being pet", "Following people", "Playing with bells"],
-      "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Oliver",
-      "image": "images/oliver.webp",
-      "age": "5-year-old",
-      "gender": "Male",
-      "description": "Charming and talkative. Great with other pets.",
-      "hobbies": ["Talking", "Sleeping", "Watching TV"],
-      "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Cleo",
-      "image": "images/cleo.webp",
-      "age": "6-month-old",
-      "gender": "Female",
-      "description": "Adventurous and energetic. Loves to climb.",
-      "hobbies": ["Climbing curtains", "Running fast", "Playing hide and seek"],
-      "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Zoe",
-      "image": "images/zoe.webp",
-      "age": "3-years-old",
-      "gender": "Female",
-      "description": "Loyal and protective. Enjoys long naps.",
-      "hobbies": ["Sleeping", "Guarding the house", "Sunbathing"],
-      "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "adopt.html"
-    },
-    {
-      "name": "Leo",
-      "image": "images/leo.webp",
-      "age": "2-years-old",
-      "gender": "Male",
-      "description": "Playful and mischievous. Expert in hide-and-seek!",
-      "hobbies": ["Hide and seek", "Climbing furniture", "Playing with balls"],
-      "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "adopt.html"
-    }
-  ]
+  {
+    "name": "Luna",
+    "image": "images/luna.webp",
+    "age": "2-years-old",
+    "gender": "Female",
+    "description": "Playful and gentle. Loves sunny spots!",
+    "hobbies": ["Sunbathing", "Chasing shadows", "Watching birds"],
+    "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Meeko",
+    "image": "images/meeko.webp",
+    "age": "3-year-old",
+    "gender": "Male",
+    "description": "Curious explorer. Gets along well with kids.",
+    "hobbies": ["Exploring new places", "Climbing", "Chasing toys"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Suki",
+    "image": "images/suki.webp",
+    "age": "1-year-old",
+    "gender": "Female",
+    "description": "Sweet and calm. Ideal for quiet homes.",
+    "hobbies": ["Sleeping", "Cuddling", "Slow walks"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Simba",
+    "image": "images/simba.webp",
+    "age": "2-year-old",
+    "gender": "Male",
+    "description": "Friendly and playful. Loves to cuddle.",
+    "hobbies": ["Cuddling", "Playing with balls", "Climbing"],
+    "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Milo",
+    "image": "images/milo.webp",
+    "age": "4-year-old",
+    "gender": "Male",
+    "description": "Independent but affectionate. Loves toys.",
+    "hobbies": ["Playing with strings", "Exploring", "Climbing shelves"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Nala",
+    "image": "images/nala.webp",
+    "age": "1-year-old",
+    "gender": "Female",
+    "description": "Very social and loves attention.",
+    "hobbies": ["Being pet", "Following people", "Playing with bells"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Oliver",
+    "image": "images/oliver.webp",
+    "age": "5-year-old",
+    "gender": "Male",
+    "description": "Charming and talkative. Great with other pets.",
+    "hobbies": ["Talking", "Sleeping", "Watching TV"],
+    "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Cleo",
+    "image": "images/cleo.webp",
+    "age": "6-month-old",
+    "gender": "Female",
+    "description": "Adventurous and energetic. Loves to climb.",
+    "hobbies": ["Climbing curtains", "Running fast", "Playing hide and seek"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Zoe",
+    "image": "images/zoe.webp",
+    "age": "3-years-old",
+    "gender": "Female",
+    "description": "Loyal and protective. Enjoys long naps.",
+    "hobbies": ["Sleeping", "Guarding the house", "Sunbathing"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Leo",
+    "image": "images/leo.webp",
+    "age": "2-years-old",
+    "gender": "Male",
+    "description": "Playful and mischievous. Expert in hide-and-seek!",
+    "hobbies": ["Hide and seek", "Climbing furniture", "Playing with balls"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Mimi",
+    "image": "images/mimi.webp",
+    "age": "1-year-old",
+    "gender": "Female",
+    "description": "Loves to cuddle and purrs nonstop.",
+    "hobbies": ["Cuddling", "Napping", "Playing with feathers"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Tiger",
+    "image": "images/tiger.webp",
+    "age": "3-year-old",
+    "gender": "Male",
+    "description": "Energetic and playful. Loves to chase lasers.",
+    "hobbies": ["Laser pointer", "Running", "Jumping"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Snowball",
+    "image": "images/snowball.webp",
+    "age": "2-years-old",
+    "gender": "Female",
+    "description": "Gentle and quiet. Prefers calm environments.",
+    "hobbies": ["Sleeping", "Watching birds", "Soft toys"],
+    "vaccines": ["Rabies", "Feline leukemia", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Shadow",
+    "image": "images/shadow.webp",
+    "age": "4-year-old",
+    "gender": "Male",
+    "description": "Shy but loving once he trusts you.",
+    "hobbies": ["Hiding", "Quiet time", "Cuddling at night"],
+    "vaccines": ["Rabies", "Feline distemper"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Bella",
+    "image": "images/bella.webp",
+    "age": "5-year-old",
+    "gender": "Female",
+    "description": "Elegant and calm. Loves soft blankets.",
+    "hobbies": ["Lounging", "Being brushed", "Watching the window"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  },
+  {
+    "name": "Koda",
+    "image": "images/koda.webp",
+    "age": "2-year-old",
+    "gender": "Female",
+    "description": "Shy and sweet, intelligent, curious. She loves outdoors",
+    "hobbies": ["Playing with strings", "Exploring new places", "Watching the window", "Watching birds"],
+    "vaccines": ["Rabies", "Feline leukemia"],
+    "adoptionLink": "adopt.html"
+  }
+
+]
+
   
