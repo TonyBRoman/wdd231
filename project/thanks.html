@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Cats</title>
+    <meta name="description" content="Furry Hearts is a website that conects cat shelter, 
+    rescuers, and adopters. Discover adoptable cats, learn about pet care, and 
+    support animal rescue efforts.For WDD 231 class - Web Frontend Development - Jorge Antonio Barron Roman">
+    <meta name="author" content="Jorge Antonio Barron Roman">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Facebook Social Media Meta -->
+    <meta property="og:title" content="Furrey Hearts">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Furry Cats Logo" loading="lazy">
+            <span>Furry Cats</span>
+          </a>
+        </div>
+      
+        <div class="header-actions">
+            <nav>
+            <button id="menu-icon" aria-label="Open menu"></button>
+            <ul class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cats.html">Meet Our Cats</a></li>
+                <li class="active"><a href="adopt.html">Adopt</a></li>
+            </ul>
+            </nav>
+        
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+                ◐ 
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="confirmation-info" class="info-box"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Furry Hearts</strong></p>
+                <p>10 Paseo de los Leones</p>
+                <p>Monterrey, Mexico 999</p>
+                <p>📧 contact@furryhearts.org</p>
+                <p>☎️ (81) 1234 5678</p>
+            </div>
+            <div class="social-media">  
+                <img src="images/facebook.png" alt="FaceBook">
+                <img src="images/instagram.png" alt="Instagram">
+            </div>
+
+            <div class="details">
+                <p>WDD231 Class Project</p>
+                <p>Jorge Antonio Barron Roman</p>
+                <p>&copy;<span id="currentYear"></span> Furry Hearts.  All rights reserved</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="script/scripts.js"></script>
+</body>
+</html>

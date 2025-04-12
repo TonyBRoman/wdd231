@@ -118,9 +118,11 @@ nav a:hover {
 }
   
 nav li.active a {
-    color: var(--color-button-hover);
+    position: relative;
+    font-weight: bold;
+    box-shadow: inset 0 -3px 0 var(--color-button-hover); 
 }
-  
+
 #menu-icon {
     display: flex;
     align-items: center;
@@ -754,3 +756,48 @@ footer {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);;
 } 
+
+/* thanks section */
+.info-box { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+}
+
+.info-container {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+}
+
+.info-container h1 {
+    margin: 0 0 .67em 0;
+}
+
+.user-details {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.value {
+    text-transform: capitalize;
+}
