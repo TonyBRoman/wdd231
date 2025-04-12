@@ -101,6 +101,35 @@
                         <option value="no">No</option>
                     </select>
                 </label>
+                
+                <label for="catPersonality">What kind of personality are you looking for in a cat?
+                    <select name="catPersonality" id="catPersonality" required>
+                        <option value="">--Please choose--</option>
+                        <option value="calm">Calm and quiet</option>
+                        <option value="playful">Playful and energetic</option>
+                        <option value="independent">Independent</option>
+                        <option value="affectionate">Very affectionate</option>
+                        <option value="notSure">Not sure yet</option>
+                    </select>
+                </label>
+
+                <label for="otherPets">Do you have other pets?</label>
+                <select name="otherPets" id="otherPets" required>
+                    <option value="">--Please choose--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="petDetails">If yes, please describe them:</label>
+                <textarea name="petDetails" id="petDetails" rows="2" placeholder="Type, age, temperament, etc."></textarea>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="responsibility" name="responsibility" required>
+                    <label for="responsibility">
+                      I understand that adopting a cat is a lifelong commitment. I will provide love, care, and a safe environment, recognizing that cats have emotions and deserve respect and compassion.
+                    </label>
+                  </div>
+                  
+                  
     
                 <button type="submit" class="btn">Send Application</button>
             </form>
@@ -113,26 +142,24 @@
         </section>
         
         <section class="adoption-centers">
-    <h2>Our Adoption Centers</h2>
-    <p>Visit us at any of our locations and meet your new best friend!</p>
+            <h2>Our Adoption Centers</h2>
+            <p>Visit us at any of our locations and meet your new best friend!</p>
 
-    <div class="locations">
-        <div class="location-card">
-            <h3>Downtown Shelter</h3>
-            <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Monterrey, NL</p>
-            <p><i class="fa-solid fa-clock"></i> Mon–Sat | 10am–6pm</p>
-        </div>
+            <div class="locations">
+                <div class="location-card">
+                    <h3>Downtown Shelter</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Monterrey, NL</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon–Sat | 10am–6pm</p>
+                </div>
 
-        <div class="location-card">
-            <h3>San Pedro Adoption Point</h3>
-            <p><i class="fa-solid fa-location-dot"></i> Av. Vasconcelos 456, San Pedro</p>
-            <p><i class="fa-solid fa-clock"></i> Mon–Fri | 11am–5pm</p>
-        </div>
-    </div>
-</section>
-
+                <div class="location-card">
+                    <h3>San Pedro Adoption Point</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Vasconcelos 456, San Pedro</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon–Fri | 11am–5pm</p>
+                </div>
+            </div>
+        </section>  
     </main>
-    
 
     <footer>
         <div class="footer-content">
