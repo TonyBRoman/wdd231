@@ -63,9 +63,9 @@
             </ol>
         </section>
     
-        <section class="adoption-tip">
+        <div class="adoption-tip">
             <p><strong>💡 Tip:</strong> Please fill out all fields carefully. The more information you provide, the better we can match you with the perfect cat! 🐱</p> 
-        </section>
+        </div>
     
         <section class="adopt-form">
             <h2>Adoption Form</h2>
@@ -80,7 +80,7 @@
                     <input type="email" name="email" id="email" title="Enter your email address" autocomplete="email" placeholder="furry@gmail.com" required>
                 </label>
                 <label for="phone">Phone Number
-                    <input type="phone" name="phone" id="phone" title="Enter your phone number" autocomplete="tel" required pattern="[0-9]{8,15}" maxlength="15">
+                    <input type="tel" name="phone" id="phone" title="Enter your phone number" autocomplete="tel" required pattern="[0-9]{8,15}" maxlength="15">
                 </label>
                 <label for="address">Your Address
                     <textarea name="address" id="address" required></textarea>
@@ -92,11 +92,12 @@
                 </label>
     
                 <div id="selectedCatPreview" class="cat-preview" style="display:none;">
-                    <h3 id="catName"></h3>
+                    <strong id="catName"></strong>
                 </div>
     
                 <label for="experience">Do you have experience with cats?
                     <select name="experience" id="experience" required>
+                        <option value="" disabled selected>Select an option</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
@@ -127,19 +128,17 @@
                     <label for="responsibility">
                       I understand that adopting a cat is a lifelong commitment. I will provide love, care, and a safe environment, recognizing that cats have emotions and deserve respect and compassion.
                     </label>
-                  </div>
-                  
-                  
-    
+                </div>
+                    
                 <button type="submit" class="btn">Send Application</button>
             </form>
         </section>
     
-        <section class="privacy-message">
+        <div class="privacy-message">
             <small>
                 We care about your privacy. Your information will only be used to contact you for the adoption process. 
             </small>
-        </section>
+        </div>
         
         <section class="adoption-centers">
             <h2>Our Adoption Centers</h2>
