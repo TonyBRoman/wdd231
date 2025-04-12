@@ -7,7 +7,7 @@
       "description": "Playful and gentle. Loves sunny spots!",
       "hobbies": ["Sunbathing", "Chasing shadows", "Watching birds"],
       "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/luna"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Meeko",
@@ -17,7 +17,7 @@
       "description": "Curious explorer. Gets along well with kids.",
       "hobbies": ["Exploring new places", "Climbing", "Chasing toys"],
       "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "https://adoptcats.com/meeko"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Suki",
@@ -27,7 +27,7 @@
       "description": "Sweet and calm. Ideal for quiet homes.",
       "hobbies": ["Sleeping", "Cuddling", "Slow walks"],
       "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/suki"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Simba",
@@ -37,7 +37,7 @@
       "description": "Friendly and playful. Loves to cuddle.",
       "hobbies": ["Cuddling", "Playing with balls", "Climbing"],
       "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/simba"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Milo",
@@ -47,7 +47,7 @@
       "description": "Independent but affectionate. Loves toys.",
       "hobbies": ["Playing with strings", "Exploring", "Climbing shelves"],
       "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/milo"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Nala",
@@ -57,7 +57,7 @@
       "description": "Very social and loves attention.",
       "hobbies": ["Being pet", "Following people", "Playing with bells"],
       "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "https://adoptcats.com/nala"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Oliver",
@@ -67,7 +67,7 @@
       "description": "Charming and talkative. Great with other pets.",
       "hobbies": ["Talking", "Sleeping", "Watching TV"],
       "vaccines": ["Rabies", "Feline distemper", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/oliver"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Cleo",
@@ -77,7 +77,7 @@
       "description": "Adventurous and energetic. Loves to climb.",
       "hobbies": ["Climbing curtains", "Running fast", "Playing hide and seek"],
       "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "https://adoptcats.com/cleo"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Zoe",
@@ -87,7 +87,7 @@
       "description": "Loyal and protective. Enjoys long naps.",
       "hobbies": ["Sleeping", "Guarding the house", "Sunbathing"],
       "vaccines": ["Rabies", "Feline leukemia"],
-      "adoptionLink": "https://adoptcats.com/zoe"
+      "adoptionLink": "adopt.html"
     },
     {
       "name": "Leo",
@@ -97,7 +97,7 @@
       "description": "Playful and mischievous. Expert in hide-and-seek!",
       "hobbies": ["Hide and seek", "Climbing furniture", "Playing with balls"],
       "vaccines": ["Rabies", "Feline distemper"],
-      "adoptionLink": "https://adoptcats.com/leo"
+      "adoptionLink": "adopt.html"
     }
   ]
   

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt</title>
+    <meta name="description" content="Furry Hearts is a website that conects cat shelter, 
+    rescuers, and adopters. Discover adoptable cats, learn about pet care, and 
+    support animal rescue efforts.For WDD 231 class - Web Frontend Development - Jorge Antonio Barron Roman">
+    <meta name="author" content="Jorge Antonio Barron Roman">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Facebook Social Media Meta -->
+    <meta property="og:title" content="Furrey Hearts">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Furry Cats Logo" loading="lazy" />
+            <span>Furry Cats</span>
+          </a>
+        </div>
+      
+        <div class="header-actions">
+            <nav>
+            <button id="menu-icon" aria-label="Open menu"></button>
+            <ul class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cats.html">Meet Our Cats</a></li>
+                <li class="active"><a href="adopt.html">Adopt</a></li>
+            </ul>
+            </nav>
+        
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+                ◐ 
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cta-adopt">
+            <h1>Adopt a Cat  🐾</h1>
+            <p>Ready to bring a new furry friend into your life? Fill out the form below and let's get started!</p>  
+        </section>
+    
+        <section class="adoption-steps">
+            <h2>Adoption Process</h2>
+            <ol>
+                <li>Fill out the form below</li>
+                <li>Wait for us to contact you</li>
+                <li>Interview & home check</li>
+                <li>Meet your future cat</li>
+                <li>Sign the agreement & welcome them home!</li>
+            </ol>
+        </section>
+    
+        <section class="adoption-tip">
+            <p><strong>💡 Tip:</strong> Please fill out all fields carefully. The more information you provide, the better we can match you with the perfect cat! 🐱</p> 
+        </section>
+    
+        <section class="adopt-form">
+            <h2>Adoption Form</h2>
+            <form action="thanks.html" method="GET" class="form">
+                <label for="fname">First Name
+                    <input type="text" name="first-name" id="fname" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+                <label for="lname">Last Name
+                    <input type="text" name="last-name" id="lname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" title="Enter your email address" autocomplete="email" placeholder="furry@gmail.com" required>
+                </label>
+                <label for="phone">Phone Number
+                    <input type="phone" name="phone" id="phone" title="Enter your phone number" autocomplete="tel" required pattern="[0-9]{8,15}" maxlength="15">
+                </label>
+                <label for="address">Your Address
+                    <textarea name="address" id="address" required></textarea>
+                </label>
+                <label for="catSelect">Which cat are you interested in?
+                    <select name="catSelect" id="catSelect">
+                        <option>-- Please select a cat --</option>
+                    </select>
+                </label>
+    
+                <div id="selectedCatPreview" class="cat-preview" style="display:none;">
+                    <h3 id="catName"></h3>
+                </div>
+    
+                <label for="experience">Do you have experience with cats?
+                    <select name="experience" id="experience" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label>
+    
+                <button type="submit" class="btn">Send Application</button>
+            </form>
+        </section>
+    
+        <section class="privacy-message">
+            <small>
+                We care about your privacy. Your information will only be used to contact you for the adoption process. 
+            </small>
+        </section>
+        
+        <section class="adoption-centers">
+    <h2>Our Adoption Centers</h2>
+    <p>Visit us at any of our locations and meet your new best friend!</p>
+
+    <div class="locations">
+        <div class="location-card">
+            <h3>Downtown Shelter</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Monterrey, NL</p>
+            <p><i class="fa-solid fa-clock"></i> Mon–Sat | 10am–6pm</p>
+        </div>
+
+        <div class="location-card">
+            <h3>San Pedro Adoption Point</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Av. Vasconcelos 456, San Pedro</p>
+            <p><i class="fa-solid fa-clock"></i> Mon–Fri | 11am–5pm</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Furry Hearts</strong></p>
+                <p>10 Paseo de los Leones</p>
+                <p>Monterrey, Mexico 999</p>
+                <p>📧 contact@furryhearts.org</p>
+                <p>☎️ (81) 1234 5678</p>
+            </div>
+            <div class="social-media">  
+                <img src="images/facebook.png" alt="FaceBook">
+                <img src="images/instagram.png" alt="Instagram">
+            </div>
+
+            <div class="details">
+                <p>WDD231 Class Project</p>
+                <p>Jorge Antonio Barron Roman</p>
+                <p>&copy;<span id="currentYear"></span> Furry Hearts.  All rights reserved</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="script/scripts.js"></script>
+    <script src="script/adopt.js"></script>
+</body>
+</html>
