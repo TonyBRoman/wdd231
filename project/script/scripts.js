@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                                 <ul>${hobbiesList}</ul>
                                 <h4>Vaccines:</h4>
                                 <ul>${vaccinesList}</ul>
-                                <a href="adopt.html" class="btn">Adopt ${name}</a>
+                                <a href="${catData.adoptionLink}" class="btn">Adopt ${name}</a>
                             </div>
                         `;
 
