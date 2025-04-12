@@ -180,81 +180,75 @@ nav li.active a {
     --color-white: #2c2c2e;
   }
   
-  .dark-mode .about-us,
-  .dark-mode .cta-adopt,
-  .dark-mode .requirements,
-  .dark-mode .adoption-steps,
-  .dark-mode .testimonial,
-  .dark-mode .adopt-form,
-  .dark-mode .start-adoption,
-  .dark-mode .location-card,
-  .dark-mode .info-container,
-  .dark-mode .cat-card,
-  .dark-mode .cat-preview,
-  .dark-mode .checkbox-group,
-  .dark-mode footer,
-  .dark-mode header,
-  .dark-mode nav ul,
-  .dark-mode .modal-content {
+.dark-mode .about-us,
+.dark-mode .cta-adopt,
+.dark-mode .requirements,
+.dark-mode .adoption-steps,
+.dark-mode .testimonial,
+.dark-mode .adopt-form,
+.dark-mode .start-adoption,
+.dark-mode .location-card,
+.dark-mode .info-container,
+.dark-mode .cat-card,
+.dark-mode .cat-preview,
+.dark-mode .checkbox-group,
+.dark-mode footer,
+.dark-mode header,
+.dark-mode nav ul,
+.dark-mode .modal-content {
     background-color: var(--color-white);
     color: var(--color-text);
-  }
+}
 
 .dark-mode body { 
     color: var(--color-text);
 }
 
-.dark-mode .hero-title h1, 
-.dark-mode .hero-title p {
-    color: white;
-}
-
 .dark-mode .logo img {
     filter: invert(1);
-  }
+}
   
-  .dark-mode .start-adoption p{
+.dark-mode .start-adoption p{
     color: var(--color-text);
-  }
+}
 
-  .dark-mode .testimonials p {
+.dark-mode .testimonials p {
     color: var(--color-text);
-  }
+}
   
-  .dark-mode .btn:hover {
+.dark-mode .btn:hover {
     background-color: var(--color-button-hover);
-  }
+}
   
-  .dark-mode .form input,
-  .dark-mode .form textarea,
-  .dark-mode .form select {
+.dark-mode .form input,
+.dark-mode .form textarea,
+.dark-mode .form select {
     background-color: #1e1e1e;
     color: var(--color-text);
     border-color: var(--color-accent);
-  }
+}
   
-  .dark-mode .checkbox-group {
+.dark-mode .checkbox-group {
     background-color: #1e1e1e;
-  }
+}
   
-  .dark-mode .adoption-tip {
+.dark-mode .adoption-tip {
     background-color: #2c2c2e;
     border-left-color: var(--color-button-hover);
-  }
+}
   
-  .dark-mode .modal {
+.dark-mode .modal {
     background-color: rgba(0, 0, 0, 0.9);
-  }
+}
   
-  .dark-mode .label {
+.dark-mode .label {
     color: var(--color-button-hover);
-  }
+}
   
-  .dark-mode .privacy-message small {
+.dark-mode .privacy-message small {
     color: #ccc;
-  }
+}
   
-
 section {
     margin-top: 2rem;
 }
@@ -263,9 +257,9 @@ main {
     padding: 1rem;  
 }
   
-.hero-title {
+/* .hero-title {
     color: white;
-}
+} */
 
 h1, h2, h3 {
     font-family: var(--font-heading);

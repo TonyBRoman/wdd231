@@ -61,6 +61,11 @@
         text-align: center;
     }
 
+    .dark-mode .hero-title h1, 
+    .dark-mode .hero-title p {
+        color: white;
+    }
+
     .hero-title h1 { 
         margin: -2px;
         color: var(--color-white);
