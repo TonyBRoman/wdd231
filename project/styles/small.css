@@ -118,7 +118,7 @@ nav a:hover {
 }
   
 nav li.active a {
-    color: var(--color-button);
+    color: var(--color-button-hover);
 }
   
 #menu-icon {
@@ -643,7 +643,7 @@ footer {
 }
 
 .adoption-tip strong {
-  color: #b70707;
+  color: var(--color-button);
 }
 
 .adopt-form {
