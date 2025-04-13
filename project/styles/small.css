@@ -773,3 +773,8 @@ footer {
 .value {
     text-transform: capitalize;
 }
+
+.references a {
+    text-decoration: none; 
+    color: inherit; 
+}
